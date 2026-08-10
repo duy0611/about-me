@@ -1,6 +1,6 @@
-# about-me — Duy Nguyen's résumé site
+# About-me — Duy Nguyen's resume site
 
-Static résumé, generated from YAML, hosted on GitHub Pages, printable as PDF, tailorable per job type.
+Static resume, generated from YAML, hosted on GitHub Pages, printable as PDF, tailorable per job type.
 
 **Live:** https://duy0611.github.io/about-me/
 
@@ -10,11 +10,11 @@ Variants:
 - Site Reliability — https://duy0611.github.io/about-me/?variant=sre
 - Platform Engineering — https://duy0611.github.io/about-me/?variant=platform
 - Backend Development — https://duy0611.github.io/about-me/?variant=backend
-- Debug mode - - Default — https://duy0611.github.io/about-me/?debug=true
+- Debug mode — https://duy0611.github.io/about-me/?debug=true
 
 ## How it works
 
-- `data/base.yaml` is the canonical résumé.
+- `data/base.yaml` is the canonical resume.
 - `data/overlays/*.yaml` are per-role overlays — small YAML files that override
   parts of the base (typically `summary` and `competencies`). They're deep-merged
   onto a fresh clone of the base at build time.
@@ -23,7 +23,7 @@ Variants:
 - `src/switcher.js` reads `?variant=…` from the URL and swaps the right sections
   in. The page still works with JavaScript disabled — it just shows the default.
 - Print styles (`@media print` in `src/styles.css`) mean `Cmd/Ctrl+P → Save as
-  PDF` gives you a clean printable résumé.
+  PDF` gives you a clean printable resume.
 
 ## Local development
 
@@ -87,7 +87,7 @@ on every push to `main`. First-time setup:
 ```
 about-me/
 ├── data/
-│   ├── base.yaml                  # canonical résumé
+│   ├── base.yaml                  # canonical resume
 │   └── overlays/                  # per-role overrides
 │       ├── sre.yaml
 │       ├── platform.yaml

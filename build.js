@@ -87,7 +87,7 @@ for (const [name, data] of Object.entries(variants)) {
   for (const section of SECTIONS) {
     rendered[section] = sectionTemplates[section](data).trim();
   }
-  rendered._title = `${data.meta.name} — ${data.meta.headline || 'Résumé'}`;
+  rendered._title = `${data.meta.name} — ${data.meta.headline || 'resume'}`;
   variantsRendered[name] = rendered;
 }
 
