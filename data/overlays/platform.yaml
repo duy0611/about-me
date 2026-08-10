@@ -7,12 +7,12 @@ meta:
 summary: |
   Staff Platform Engineer focused on building Internal Developer Platforms that
   let product teams ship safely without waiting on ops. 6+ years designing golden
-  paths on AWS and GCP — reusable Terraform modules, Ansible roles, and
-  Kubernetes-native abstractions that turn one-off tickets into self-service
+  paths on AWS and GCP — reusable Terraform modules and Kubernetes-native
+  abstractions (Config Connector, ACK) that turn one-off tickets into self-service
   workflows. A force multiplier who thrives at the intersection of DX, security,
   and cost: writing paved-road tooling, mentoring engineers, and setting technical
-  standards that make the safe path also the easy path. Bringing an AI/ML
-  background to help teams adopt AI-assisted development safely.
+  standards that make the safe path also the easy path. Hands-on exposure to AI/ML
+  systems to help teams adopt AI-assisted development safely.
 
 competencies:
   - group: Platform & Developer Experience

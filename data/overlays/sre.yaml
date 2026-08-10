@@ -9,7 +9,7 @@ summary: |
   at scale across AWS and GCP. Deep experience turning noisy, high-risk operations
   into SLO-backed, self-healing systems — from designing incident response
   procedures and on-call rotations to codifying reliability guardrails as
-  Terraform, Ansible, and Kubernetes controllers. Comfortable owning the full
+  Terraform and Kubernetes controllers (Config Connector, ACK). Comfortable owning the full
   reliability stack: telemetry, alerting, error budgets, capacity planning, and
   post-incident learning. Track record of mentoring engineers into a reliability
   mindset and driving org-wide standards for observability and change safety.

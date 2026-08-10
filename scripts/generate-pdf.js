@@ -84,6 +84,8 @@ async function main() {
             box-shadow: none !important;
           }
           .resume__header    { padding: 18px 24px 12px !important; }
+          .contact           { font-size: 11.5px !important; }
+          .contact__item + .contact__item::before { margin: 0 4px !important; }
           .resume__sidebar-inner { padding: 18px 20px !important; }
           .resume__main      { padding: 18px 24px !important; }
 

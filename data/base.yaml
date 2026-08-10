@@ -13,12 +13,13 @@ summary: |
   Highly autonomous and results-driven Staff Platform Engineer with over 10 years of
   software engineering experience and 6+ years specializing in Cloud Infrastructure,
   Site Reliability, and DevOps. Proven track record of designing and provisioning
-  large-scale, multi-cloud infrastructure (AWS, GCP) using Terraform and Ansible.
+  large-scale, multi-cloud infrastructure (AWS, GCP) using Terraform and Kubernetes-native
+  abstractions (Config Connector, ACK).
   Passionate about building "golden paths," automated self-service pipelines, and
   robust security guardrails that empower developer teams to work securely and
   efficiently. Uniquely positioned to enable safe AI-assisted development, combining
-  deep technical mastery of cloud architecture with an academic and practical
-  background in AI/ML and NLP systems. A humble and collaborative leader who thrives
+  deep technical mastery of cloud architecture with hands-on exposure to AI/ML systems
+  and some NLP work. A humble and collaborative leader who thrives
   on mentoring engineers, leading architectural reviews, and driving technical
   standards in high-autonomy environments.
 
@@ -86,7 +87,7 @@ experience:
       - label: Golden Paths & Self-Service Automation
         text: >-
           Automate high-risk operations and build deterministic, reusable IaC
-          templates using Terraform, Ansible, Packer, and Jenkins to reduce manual
+          templates using Terraform, Ansible, Packer, and Github Actions to reduce manual
           overhead and empower development teams to provision their own
           infrastructure safely.
       - label: Governance & Security
@@ -140,7 +141,7 @@ experience:
         text: >-
           Designed a scalable microservices architecture using Java Spring Boot,
           Docker, Kubernetes, and AWS/DigitalOcean. Orchestrated CI/CD pipelines via
-          GitLab to accelerate time-to-market.
+          Github Actions to accelerate time-to-market.
 
   - company: LIFESUP
     location: Vietnam
