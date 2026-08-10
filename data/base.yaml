@@ -10,18 +10,15 @@ meta:
     website: "https://duy0611.github.io/about-me"
 
 summary: |
-  Highly autonomous and results-driven Staff Platform Engineer with over 10 years of
-  software engineering experience and 6+ years specializing in Cloud Infrastructure,
-  Site Reliability, and DevOps. Proven track record of designing and provisioning
-  large-scale, multi-cloud infrastructure (AWS, GCP) using Terraform and Kubernetes-native
-  abstractions (Config Connector, ACK).
-  Passionate about building "golden paths," automated self-service pipelines, and
-  robust security guardrails that empower developer teams to work securely and
-  efficiently. Uniquely positioned to enable safe AI-assisted development, combining
-  deep technical mastery of cloud architecture with hands-on exposure to AI/ML systems
-  and some NLP work. A humble and collaborative leader who thrives
-  on mentoring engineers, leading architectural reviews, and driving technical
-  standards in high-autonomy environments.
+  Platform Engineer with over 15 years in software engineering and the last six in
+  cloud infrastructure, reliability, and DevOps. I manage and provision 17+ Kubernetes
+  clusters, 100+ GCP projects, and 5+ AWS accounts serving more than 100 engineers,
+  using Terraform and Kubernetes-native controllers (Config Connector, ACK).
+  I help architect and build our internal developer platform, and turn manual,
+  high-risk operations into reusable templates and access that gets reviewed in a
+  pull request rather than granted by hand. I've also built and
+  run production infrastructure for ML and NLP workloads. I mentor engineers, run
+  architectural reviews, and set technical standards.
 
 competencies:
   - group: Cloud & Infrastructure
@@ -44,10 +41,13 @@ competencies:
       - GitOps
   - group: Identity, Security & Governance
     items:
-      - IAM policies
-      - SSO / OIDC
-      - Access Governance
-      - Security Guardrails
+      - AWS Organizations & multi-account
+      - AWS IAM Identity Center
+      - GCP IAM & JIT access groups
+      - Workload Identity / OIDC federation
+      - Kyverno
+      - Kubernetes RBAC & Network Policies
+      - External Secrets / Secret Manager
   - group: Software Engineering & Scripting
     items:
       - Python
@@ -118,11 +118,10 @@ experience:
         text: >-
           Architected and deployed production-grade infrastructure for an internal
           NLP (Natural Language Processing) project on AWS.
-      - label: AI-Assisted Workflows
+      - label: ML Pipelines on Kubernetes
         text: >-
-          Bridged the gap between full-stack development and DevOps, creating secure
-          deployment environments for machine learning data pipelines using
-          Kubernetes, Helm, Docker, and Airflow.
+          Built secure deployment environments for machine learning data pipelines
+          using Kubernetes, Helm, Docker, and Airflow.
       - label: IaC & Automation
         text: >-
           Provisioned robust cloud infrastructure using Terraform, ensuring
@@ -197,7 +196,7 @@ experience:
           C#, and Java in cooperation with Wärtsilä Ship Power.
 
 education:
-  - degree: Doctoral Programme in Technical Sciences, Computer Science
+  - degree: Doctoral Studies in Technical Sciences, Computer Science (not completed)
     school: University of Vaasa
     start: "2015"
     end: "2020"
@@ -212,7 +211,6 @@ education:
 
 certifications:
   - Google Cloud Platform Fundamentals for AWS Professionals
-  - Elements of AI
   - Machine Learning A-Z — Hands-On Python & R in Data Science
   - Learn DevOps — The Complete Kubernetes Course
   - Microservices with Spring Cloud

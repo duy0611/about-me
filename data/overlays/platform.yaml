@@ -5,7 +5,7 @@ meta:
   headline: Staff Platform Engineer
 
 summary: |
-  Staff Platform Engineer focused on building Internal Developer Platforms that
+  Platform Engineer focused on building Internal Developer Platforms that
   let product teams ship safely without waiting on ops. 6+ years designing golden
   paths on AWS and GCP — reusable Terraform modules and Kubernetes-native
   abstractions (Config Connector, ACK) that turn one-off tickets into self-service
