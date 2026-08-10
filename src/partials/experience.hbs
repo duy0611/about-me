@@ -1,0 +1,37 @@
+<h2 class="block__title">Professional Experience</h2>
+<div class="experience">
+  {{#each experience}}
+  <article class="job {{#if roles.[1]}}job--multi{{else}}job--single{{/if}}">
+    <header class="job__header">
+      <div class="job__company-block">
+        <h3 class="job__company">{{company}}</h3>
+        {{#if location}}<span class="job__location">{{location}}</span>{{/if}}
+      </div>
+      {{#if roles.[1]}}
+      <ul class="job__roles">
+        {{#each roles}}
+        <li class="job__role">
+          <span class="job__title">{{title}}</span>
+          <span class="job__dates">{{start}} – {{end}}</span>
+        </li>
+        {{/each}}
+      </ul>
+      {{else}}
+      {{#with roles.[0]}}
+      <div class="job__role job__role--inline">
+        <span class="job__title">{{title}}</span>
+        <span class="job__dates">{{start}} – {{end}}</span>
+      </div>
+      {{/with}}
+      {{/if}}
+    </header>
+    <ul class="job__bullets">
+      {{#each bullets}}
+      <li>
+        {{#if label}}<strong>{{label}}:</strong> {{/if}}{{text}}
+      </li>
+      {{/each}}
+    </ul>
+  </article>
+  {{/each}}
+</div>

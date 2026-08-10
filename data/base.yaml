@@ -1,0 +1,223 @@
+meta:
+  name: Duy Nguyen
+  headline: Staff Platform Engineer
+  location: Espoo, Uusimaa, Finland
+  phone: "+358 44 272 5641"
+  email: duy.nguyen.personal@gmail.com
+  links:
+    linkedin: "https://www.linkedin.com/in/duy-nguyen-527ba756/"
+    github: "https://github.com/duy0611"
+    website: "https://duy0611.github.com/about-me"
+
+summary: |
+  Highly autonomous and results-driven Staff Platform Engineer with over 10 years of
+  software engineering experience and 6+ years specializing in Cloud Infrastructure,
+  Site Reliability, and DevOps. Proven track record of designing and provisioning
+  large-scale, multi-cloud infrastructure (AWS, GCP) using Terraform and Ansible.
+  Passionate about building "golden paths," automated self-service pipelines, and
+  robust security guardrails that empower developer teams to work securely and
+  efficiently. Uniquely positioned to enable safe AI-assisted development, combining
+  deep technical mastery of cloud architecture with an academic and practical
+  background in AI/ML and NLP systems. A humble and collaborative leader who thrives
+  on mentoring engineers, leading architectural reviews, and driving technical
+  standards in high-autonomy environments.
+
+competencies:
+  - group: Cloud & Infrastructure
+    items:
+      - AWS
+      - Google Cloud Platform (GCP)
+      - Multi-Cloud Architecture
+      - DigitalOcean
+  - group: Infrastructure as Code & Automation
+    items:
+      - Terraform
+      - Ansible
+      - Packer
+      - Jenkins
+      - Bamboo
+      - GitHub Actions
+      - Kubernetes
+      - Helm
+      - Docker
+  - group: Identity, Security & Governance
+    items:
+      - IAM policies
+      - SSO / OIDC
+      - Access Governance
+      - Security Guardrails
+  - group: Software Engineering & Scripting
+    items:
+      - Python
+      - Shell / Bash
+      - Java
+      - Golang
+      - Spring Boot
+      - Microservices
+  - group: Domain Expertise
+    items:
+      - Internal Developer Platforms
+      - AI-assisted workflows
+      - FinOps & Cost Optimization
+      - Large-scale Distributed Systems
+
+experience:
+  - company: Supermetrics
+    location: Helsinki, Finland
+    roles:
+      - title: Staff Platform Engineer
+        start: July 2026
+        end: Present
+      - title: Team Lead / Cloud Infrastructure
+        start: Jan 2025
+        end: June 2026
+      - title: Lead Site Reliability Engineer
+        start: Apr 2023
+        end: Jan 2025
+      - title: Site Reliability Engineer
+        start: Aug 2020
+        end: Mar 2023
+    bullets:
+      - label: Cloud Architecture & Multi-Cloud
+        text: >-
+          Manage, provision, and scale Supermetrics' large-scale infrastructure across
+          AWS and GCP environments, ensuring high availability and seamless
+          cross-cloud orchestration.
+      - label: Golden Paths & Self-Service Automation
+        text: >-
+          Automate high-risk operations and build deterministic, reusable IaC
+          templates using Terraform, Ansible, Packer, and Jenkins to reduce manual
+          overhead and empower development teams to provision their own
+          infrastructure safely.
+      - label: Governance & Security
+        text: >-
+          Implement strict cloud governance and security guardrails across hundreds
+          of accounts using IAM policies, roles, and scoped permissions, minimizing
+          risk while maintaining developer velocity.
+      - label: Technical Leadership
+        text: >-
+          Act as a force multiplier by mentoring engineers, leading architectural
+          reviews, and turning complex business requirements into concrete technical
+          roadmaps. Set technical standards across the organization.
+      - label: Cost Optimization (FinOps)
+        text: >-
+          Continuously evaluate and optimize cloud resource consumption across AWS
+          and GCP to ensure cost-efficiency across multiple teams and projects.
+
+  - company: Valuemotive
+    location: Helsinki, Finland
+    roles:
+      - title: Software Architect
+        start: Apr 2019
+        end: Jul 2020
+    bullets:
+      - label: AI Infrastructure & Kubernetes
+        text: >-
+          Architected and deployed production-grade infrastructure for an internal
+          NLP (Natural Language Processing) project on AWS.
+      - label: AI-Assisted Workflows
+        text: >-
+          Bridged the gap between full-stack development and DevOps, creating secure
+          deployment environments for machine learning data pipelines using
+          Kubernetes, Helm, Docker, and Airflow.
+      - label: IaC & Automation
+        text: >-
+          Provisioned robust cloud infrastructure using Terraform, ensuring
+          consistent and reproducible environments across the lifecycle.
+
+  - company: Witrafi
+    location: Helsinki, Finland
+    roles:
+      - title: Lead Technical Architect
+        start: Feb 2018
+        end: Mar 2019
+    bullets:
+      - label: Core Platform Architecture
+        text: >-
+          Directed the high-level technology choices for core startup products
+          (Magee, Spottery, Rent-a-park).
+      - label: Microservices & CI/CD
+        text: >-
+          Designed a scalable microservices architecture using Java Spring Boot,
+          Docker, Kubernetes, and AWS/DigitalOcean. Orchestrated CI/CD pipelines via
+          GitLab to accelerate time-to-market.
+
+  - company: LIFESUP
+    location: Vietnam
+    roles:
+      - title: CTO and Co-founder
+        start: Nov 2016
+        end: Oct 2018
+    bullets:
+      - label: Product Leadership
+        text: >-
+          Managed and developed the core product (TagOn for Fashion). Defined the
+          technical vision and led a team to build robust software using Java,
+          Spring Cloud, Docker, Rancher, and AWS.
+      - label: Business Alignment
+        text: >-
+          Coordinated the core team to act as subcontractors for major partners,
+          translating vague business pain points into technical roadmaps and
+          independently driving complex projects to completion.
+
+  - company: Wapice Ltd
+    location: Vaasa, Finland
+    roles:
+      - title: Senior Software Developer — Java / Full-stack
+        start: Jun 2009
+        end: Apr 2019
+    bullets:
+      - label: Versatile Engineering
+        text: >-
+          Served as Lead Developer and Lead Architect across multiple subcontractor
+          projects, utilizing a vast tech stack (Java, C#, AWS, Docker, Kubernetes,
+          Jenkins).
+      - label: Customer & Vendor Management
+        text: >-
+          Worked closely with clients to build and maintain ERP systems,
+          troubleshooting complex issues and building lasting technical partnerships.
+
+  - company: University of Vaasa
+    location: Vaasa, Finland
+    roles:
+      - title: Researcher / Project Worker
+        start: Sep 2010
+        end: Dec 2016
+    bullets:
+      - label: Smart Systems & Computing
+        text: >-
+          Developed smart systems involving Big Data, Cloud Computing, and Parallel
+          Computing (NVIDIA CUDA) for the S-STEP program.
+      - label: Logistics Platform
+        text: >-
+          Built the portal for a Logistics Tracking System using Salesforce Cloud,
+          C#, and Java in cooperation with Wärtsilä Ship Power.
+
+education:
+  - degree: Doctoral Programme in Technical Sciences, Computer Science
+    school: University of Vaasa
+    start: "2015"
+    end: "2020"
+  - degree: MSc in Economics and Business Administration, Industrial Management
+    school: University of Vaasa
+    start: "2011"
+    end: "2014"
+  - degree: BEng in Information Technology
+    school: Vaasa University of Applied Sciences
+    start: "2008"
+    end: "2010"
+
+certifications:
+  - Google Cloud Platform Fundamentals for AWS Professionals
+  - Elements of AI
+  - Machine Learning A-Z — Hands-On Python & R in Data Science
+  - Learn DevOps — The Complete Kubernetes Course
+  - Microservices with Spring Cloud
+
+languages:
+  - name: Vietnamese
+    level: Native
+  - name: English
+    level: Full Professional
+  - name: Finnish
+    level: Limited Working

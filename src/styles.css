@@ -1,0 +1,466 @@
+/* --- design tokens ------------------------------------------------------- */
+:root {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: 'IBM Plex Serif', Georgia, 'Times New Roman', serif;
+
+  --color-bg: #ffffff;
+  --color-fg: #1a1a1a;
+  --color-muted: #5f6572;
+  --color-subtle: #8a8f99;
+  --color-accent: #1f6feb;
+  --color-sidebar-bg: #f5f6f8;
+  --color-rule: #e4e6ea;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+
+  --radius: 6px;
+}
+
+/* --- base ---------------------------------------------------------------- */
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #eef1f4;
+  color: var(--color-fg);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  /* Force browsers/Puppeteer to keep backgrounds + colors when printing. */
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+a { color: var(--color-accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+h1, h2, h3 { margin: 0; font-weight: 600; }
+
+/* --- variant picker (screen only) --------------------------------------- */
+/* Hidden by default — surfaced only when the URL carries ?debug=true.
+   switcher.js flips [data-visible="true"] on load. */
+.variant-picker {
+  display: none;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-5);
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--color-rule);
+  font-size: 13px;
+}
+.variant-picker[data-visible="true"] { display: flex; }
+.variant-picker label { color: var(--color-muted); font-weight: 500; }
+.variant-picker select {
+  padding: 4px 8px;
+  border: 1px solid var(--color-rule);
+  border-radius: var(--radius);
+  background: white;
+  font: inherit;
+}
+.variant-picker .print-link {
+  margin-left: auto;
+  padding: 4px 12px;
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius);
+  color: var(--color-accent);
+}
+
+/* --- resume layout (screen) --------------------------------------------- */
+.resume {
+  max-width: 960px;
+  margin: var(--space-6) auto;
+  background: var(--color-bg);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "header header"
+    "sidebar main";
+}
+
+.resume__header {
+  grid-area: header;
+  padding: var(--space-6) var(--space-6) var(--space-5);
+  border-bottom: 1px solid var(--color-rule);
+}
+.resume__sidebar {
+  grid-area: sidebar;
+  /* No background/border on the grid track itself — the track fills the
+     full row height, and if main is taller than sidebar we'd end up
+     tinting empty space on lower pages. The visible tint lives on
+     `.resume__sidebar-inner` (below), which has intrinsic content
+     height, so any empty area of the track stays clean/white. */
+}
+.resume__sidebar-inner {
+  padding: var(--space-6) var(--space-5);
+  background: var(--color-sidebar-bg);
+}
+.resume__main {
+  grid-area: main;
+  padding: var(--space-6);
+  /* Divider between sidebar and main. Put it on main (the almost-always
+     taller column) so the rule always runs the full height of the
+     resume, even where sidebar content has ended. */
+  border-left: 1px solid var(--color-rule);
+}
+
+/* --- header content ----------------------------------------------------- */
+.name {
+  font-family: var(--font-serif);
+  font-size: 34px;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+}
+.headline {
+  margin: var(--space-2) 0 var(--space-4);
+  color: var(--color-accent);
+  font-size: 16px;
+  font-weight: 500;
+}
+.contact {
+  margin: 0;
+  font-size: 13px;
+  color: var(--color-muted);
+  line-height: 1.5;
+}
+.contact__item { white-space: nowrap; }
+.contact__item + .contact__item::before {
+  content: "·";
+  color: var(--color-subtle);
+  margin: 0 var(--space-2);
+}
+.contact a { color: var(--color-muted); }
+.contact a:hover { color: var(--color-accent); }
+
+/* --- block titles ------------------------------------------------------- */
+.block { margin-bottom: var(--space-6); }
+.block:last-child { margin-bottom: 0; }
+.block__title {
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-subtle);
+  margin-bottom: var(--space-3);
+  padding-bottom: var(--space-2);
+  border-bottom: 1px solid var(--color-rule);
+}
+
+/* --- summary ------------------------------------------------------------ */
+.summary {
+  margin: 0;
+  font-size: 14px;
+  color: var(--color-fg);
+}
+
+/* --- competencies ------------------------------------------------------- */
+.competencies { display: grid; gap: var(--space-4); }
+.competency__group {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-fg);
+  margin-bottom: var(--space-1);
+}
+.competency__items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 6px;
+}
+.competency__items li {
+  font-size: 12px;
+  background: #ffffff;
+  border: 1px solid var(--color-rule);
+  border-radius: 4px;
+  padding: 2px 8px;
+  color: var(--color-muted);
+}
+
+/* --- experience --------------------------------------------------------- */
+.experience { display: grid; gap: var(--space-5); }
+.job { break-inside: avoid; page-break-inside: avoid; }
+
+.job__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--space-4);
+  margin-bottom: var(--space-2);
+  flex-wrap: nowrap;
+}
+/* Keep multi-word company names ("Wapice Ltd", "University of Vaasa") on one
+   line — flex items with auto min-width would otherwise shrink to their
+   longest-word width and wrap. */
+.job__company-block { flex: 0 1 auto; min-width: 0; }
+.job__company { font-size: 15px; font-weight: 600; white-space: nowrap; }
+.job__location { display: block; font-size: 12px; color: var(--color-muted); white-space: nowrap; }
+.job__roles { flex: 0 0 auto; }
+
+.job__roles { list-style: none; margin: 0; padding: 0; text-align: right; }
+.job__role { font-size: 12px; display: block; }
+.job__title { font-weight: 500; color: var(--color-fg); display: block; }
+.job__dates { display: block; color: var(--color-muted); font-size: 11px; }
+
+/* single-role variant: title + dates inline on one line, aligned right */
+.job--single .job__role--inline { text-align: right; }
+.job--single .job__title { display: inline; }
+.job--single .job__dates { display: block; }
+
+.job__bullets { margin: var(--space-2) 0 0; padding-left: 18px; }
+.job__bullets li { margin-bottom: var(--space-2); font-size: 13px; }
+.job__bullets li:last-child { margin-bottom: 0; }
+.job__bullets strong { color: var(--color-fg); font-weight: 600; }
+
+/* --- education, certifications, languages ------------------------------ */
+.education, .certifications, .languages {
+  list-style: none; margin: 0; padding: 0;
+}
+.education__item { margin-bottom: var(--space-3); font-size: 12px; break-inside: avoid; }
+.education__item:last-child { margin-bottom: 0; }
+.education__degree { font-weight: 600; color: var(--color-fg); }
+.education__school { color: var(--color-muted); }
+.education__dates { color: var(--color-subtle); font-size: 11px; }
+
+.certifications li {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-fg);
+  padding: 3px 0;
+  border-bottom: 1px dashed var(--color-rule);
+}
+.certifications li:last-child { border-bottom: none; }
+
+.languages li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  padding: 3px 0;
+}
+.languages__name { color: var(--color-fg); font-weight: 500; }
+.languages__level { color: var(--color-muted); }
+
+/* --- responsive --------------------------------------------------------- */
+@media (max-width: 720px) {
+  .resume {
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "main" "sidebar";
+    margin: 0;
+    box-shadow: none;
+  }
+  .resume__sidebar { border-right: none; border-top: 1px solid var(--color-rule); }
+  .variant-picker { flex-wrap: wrap; }
+  .job__header { flex-direction: column; }
+  .job__roles, .job__role--inline { text-align: left; }
+}
+
+/* ======================================================================
+   PRINT — single-column, dense typography
+   ======================================================================
+   Screen uses a CSS Grid two-column layout. Grid does not paginate;
+   multicolumn is broken in Chrome print (column-fill:auto fills col 1
+   across every page before starting col 2). So on print we go
+   single-column: dense, predictable, ATS-friendly, reliable across
+   engines. DOM order (main first, sidebar after) gives:
+   header → summary → experience → competencies → education → certs → langs.
+   ====================================================================== */
+@page {
+  size: A4;
+  margin: 12mm 14mm;
+}
+
+@media print {
+  html, body {
+    background: #ffffff;
+    font-size: 10pt;
+    line-height: 1.35;
+  }
+  .variant-picker { display: none !important; }
+
+  /* Nuke the screen grid — everything flows top-to-bottom, full width. */
+  .resume {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+    display: block;
+  }
+  .resume__header,
+  .resume__sidebar,
+  .resume__main {
+    display: block;
+    grid-area: auto;
+    padding: 0;
+    background: transparent;
+    border: none;
+  }
+
+  .resume__header {
+    padding-bottom: 3mm;
+    margin-bottom: 4mm;
+    border-bottom: 0.5pt solid var(--color-rule);
+  }
+
+  /* Sections */
+  .block {
+    margin-bottom: 4mm;
+    break-inside: avoid-page;
+  }
+  .block__title {
+    font-size: 8.5pt;
+    margin-bottom: 2mm;
+    padding-bottom: 1mm;
+    break-after: avoid-page;
+    page-break-after: avoid;
+  }
+
+  /* Header */
+  .name { font-size: 22pt; margin-bottom: 0.5mm; }
+  .headline { font-size: 12pt; margin: 0 0 2.5mm; }
+  .contact { font-size: 9pt; line-height: 1.5; }
+
+  /* Summary */
+  .summary { font-size: 10pt; }
+
+  /* Competencies: two-column horizontal list within a full-width block.
+     Category on the left, comma/dot list on the right. */
+  .competencies {
+    display: block;
+  }
+  .competency {
+    display: grid;
+    grid-template-columns: 55mm 1fr;
+    gap: 4mm;
+    margin-bottom: 1.5mm;
+    break-inside: avoid;
+  }
+  .competency__group {
+    font-size: 9.5pt;
+    margin: 0;
+    color: var(--color-fg);
+    font-weight: 600;
+  }
+  .competency__items {
+    display: block;
+    font-size: 9.5pt;
+    color: var(--color-fg);
+    line-height: 1.4;
+  }
+  .competency__items li {
+    display: inline;
+    background: transparent;
+    border: none;
+    padding: 0;
+    color: var(--color-fg);
+  }
+  .competency__items li:not(:last-child)::after {
+    content: " · ";
+    color: var(--color-subtle);
+  }
+
+  /* Experience */
+  .job {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    margin-bottom: 3.5mm;
+  }
+  .job__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 6mm;
+    margin-bottom: 1.5mm;
+    break-after: avoid-page;
+    page-break-after: avoid;
+  }
+  .job__company-block { flex: 1 1 auto; }
+  .job__company { font-size: 11pt; line-height: 1.2; }
+  .job__location { font-size: 9pt; color: var(--color-muted); margin-top: 0.5mm; }
+
+  .job__roles {
+    flex: 0 0 auto;
+    text-align: right;
+    max-width: 60mm;
+  }
+  .job__role { display: block; }
+  .job__title { display: block; font-size: 9.5pt; font-weight: 500; }
+  .job__dates { display: block; font-size: 8.5pt; color: var(--color-muted); }
+  .job--single .job__role--inline { text-align: right; max-width: 60mm; }
+  .job--multi .job__role { margin-bottom: 0.8mm; }
+
+  .job__bullets {
+    margin: 1mm 0 0;
+    padding-left: 4mm;
+    list-style-type: disc;
+  }
+  .job__bullets li { font-size: 9.5pt; margin-bottom: 1.2mm; line-height: 1.35; }
+  .job__bullets li:last-child { margin-bottom: 0; }
+
+  /* Education — inline compact row: degree, school, dates on one line */
+  .education { display: block; }
+  .education__item {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 4mm;
+    margin-bottom: 1.5mm;
+    font-size: 9.5pt;
+    break-inside: avoid;
+  }
+  .education__degree { font-weight: 600; font-size: 9.5pt; grid-column: 1; }
+  .education__school { color: var(--color-muted); grid-column: 1; font-size: 9pt; }
+  .education__dates { grid-column: 2; grid-row: 1 / span 2; align-self: center; color: var(--color-muted); font-size: 9pt; white-space: nowrap; }
+
+  /* Certifications — compact single-line list, dot separated */
+  .certifications {
+    display: block;
+    font-size: 9.5pt;
+    color: var(--color-fg);
+    line-height: 1.5;
+  }
+  .certifications li {
+    display: inline;
+    padding: 0;
+    border: none;
+    color: var(--color-fg);
+  }
+  .certifications li:not(:last-child)::after {
+    content: " · ";
+    color: var(--color-subtle);
+  }
+
+  /* Languages — inline compact row */
+  .languages {
+    display: flex;
+    gap: 6mm;
+    flex-wrap: wrap;
+    font-size: 9.5pt;
+  }
+  .languages li {
+    display: inline-flex;
+    gap: 2mm;
+    padding: 0;
+    justify-content: flex-start;
+  }
+  .languages__name { font-weight: 600; }
+  .languages__level { color: var(--color-muted); }
+
+  /* Links: plain text in print */
+  a { color: var(--color-fg); text-decoration: none; }
+
+  /* Widow/orphan hygiene */
+  p, li { orphans: 3; widows: 3; }
+}

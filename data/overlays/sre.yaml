@@ -1,0 +1,53 @@
+# Overlay: Site Reliability Engineer
+# Emphasizes reliability, observability, incident response, and on-call.
+
+meta:
+  headline: Lead Site Reliability Engineer
+
+summary: |
+  Lead Site Reliability Engineer with 6+ years running production infrastructure
+  at scale across AWS and GCP. Deep experience turning noisy, high-risk operations
+  into SLO-backed, self-healing systems — from designing incident response
+  procedures and on-call rotations to codifying reliability guardrails as
+  Terraform, Ansible, and Kubernetes controllers. Comfortable owning the full
+  reliability stack: telemetry, alerting, error budgets, capacity planning, and
+  post-incident learning. Track record of mentoring engineers into a reliability
+  mindset and driving org-wide standards for observability and change safety.
+
+competencies:
+  - group: Reliability & Operations
+    items:
+      - SLI / SLO / Error Budgets
+      - Incident Response & Post-mortems
+      - On-call & Escalation
+      - Observability & Telemetry
+      - Capacity Planning
+      - Chaos & Failure Testing
+  - group: Cloud & Infrastructure
+    items:
+      - AWS
+      - Google Cloud Platform (GCP)
+      - Multi-Cloud Architecture
+      - DigitalOcean
+  - group: Infrastructure as Code & Automation
+    items:
+      - Terraform
+      - Ansible
+      - Packer
+      - Kubernetes
+      - Helm
+      - Docker
+      - Jenkins
+      - GitHub Actions
+  - group: Programming & Scripting
+    items:
+      - Python
+      - Shell / Bash
+      - Java
+      - Golang
+  - group: Identity, Security & Governance
+    items:
+      - IAM policies
+      - SSO / OIDC
+      - Access Governance
+      - Security Guardrails

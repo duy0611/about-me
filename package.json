@@ -1,0 +1,23 @@
+{
+  "name": "about-me",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Duy Nguyen's resume site — static, printable, role-variant aware.",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "node build.js && npx --yes serve dist -l 5173",
+    "pdf": "node build.js && node scripts/generate-pdf.js",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "handlebars": "^4.7.8",
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "puppeteer": "^23.11.1",
+    "serve-handler": "^6.1.6"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,49 @@
+# Overlay: Backend Developer (Java / Spring / microservices)
+# Emphasizes application engineering roots — Wapice, Witrafi, LIFESUP.
+
+meta:
+  headline: Lead Backend Engineer (Java / Spring / Microservices)
+
+summary: |
+  Lead Backend engineer with 10+ years shipping production services in Java, Spring
+  Boot, and Python — from ERP integrations at Wapice, through microservices
+  platforms at Witrafi, to product ownership as CTO/Co-founder at LIFESUP. Also
+  6+ years running the infrastructure those services live on (AWS, GCP,
+  Kubernetes, Terraform), so I write code that ops-well: predictable, observable,
+  and cheap to change. Comfortable across the whole delivery stack, from API
+  design and data modeling through CI/CD and cloud runtime.
+
+competencies:
+  - group: Languages
+    items:
+      - Java
+      - Python
+      - C#
+      - Shell / Bash
+      - JavaScript / Typescript
+  - group: Backend Frameworks & Patterns
+    items:
+      - Spring Boot / Spring Cloud
+      - Microservices
+      - REST / gRPC APIs
+      - Event-driven Architecture
+      - Relational + NoSQL data modeling
+  - group: Runtime & Deployment
+    items:
+      - Docker
+      - Kubernetes
+      - Helm
+      - CI/CD (Jenkins, GitHub Actions, GitLab)
+      - Airflow
+  - group: Cloud & Infrastructure
+    items:
+      - AWS
+      - Google Cloud Platform (GCP)
+      - Terraform
+      - Ansible
+      - DigitalOcean
+  - group: Domain
+    items:
+      - Large-scale Distributed Systems
+      - ML / NLP data pipelines
+      - Multi-tenant SaaS

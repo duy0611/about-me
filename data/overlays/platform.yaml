@@ -1,0 +1,59 @@
+# Overlay: Platform Engineering
+# Emphasizes IDPs, golden paths, self-service, developer experience.
+
+meta:
+  headline: Staff Platform Engineer
+
+summary: |
+  Staff Platform Engineer focused on building Internal Developer Platforms that
+  let product teams ship safely without waiting on ops. 6+ years designing golden
+  paths on AWS and GCP — reusable Terraform modules, Ansible roles, and
+  Kubernetes-native abstractions that turn one-off tickets into self-service
+  workflows. A force multiplier who thrives at the intersection of DX, security,
+  and cost: writing paved-road tooling, mentoring engineers, and setting technical
+  standards that make the safe path also the easy path. Bringing an AI/ML
+  background to help teams adopt AI-assisted development safely.
+
+competencies:
+  - group: Platform & Developer Experience
+    items:
+      - Internal Developer Platforms
+      - Golden Paths & Paved Roads
+      - Self-Service Automation
+      - Backstage-style Portals
+      - DX Metrics
+  - group: Cloud & Infrastructure
+    items:
+      - AWS
+      - Google Cloud Platform (GCP)
+      - Multi-Cloud Architecture
+      - Kubernetes
+      - Helm
+      - Docker
+  - group: Infrastructure as Code & Automation
+    items:
+      - Terraform (modules, workspaces)
+      - Ansible
+      - Packer
+      - Jenkins
+      - GitHub Actions
+      - CI/CD
+  - group: Identity, Security & Governance
+    items:
+      - IAM policies
+      - SSO / OIDC
+      - Access Governance
+      - Policy as Code (OPA)
+      - Security Guardrails
+  - group: Programming & Scripting
+    items:
+      - Python
+      - Shell / Bash
+      - Java
+      - Golang
+      - Microservices
+  - group: Domain
+    items:
+      - FinOps & Cost Optimization
+      - AI-assisted developer workflows
+      - Large-scale Distributed Systems

@@ -1,0 +1,10 @@
+<h2 class="block__title">Education</h2>
+<ul class="education">
+  {{#each education}}
+  <li class="education__item">
+    <div class="education__degree">{{degree}}</div>
+    <div class="education__school">{{school}}</div>
+    <div class="education__dates">{{start}} – {{end}}</div>
+  </li>
+  {{/each}}
+</ul>

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{meta.name}} — Résumé</title>
+  <meta name="description" content="{{meta.name}} — {{meta.headline}}. {{meta.location}}.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Serif:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="variant-picker" aria-label="View this resume tailored for a role">
+    <label for="variant-select">View as:</label>
+    <select id="variant-select">
+      <option value="default">Default</option>
+      <option value="sre">Site Reliability</option>
+      <option value="platform">Platform Engineering</option>
+      <option value="backend">Backend Development</option>
+    </select>
+    <a id="pdf-link" class="print-link" href="resume.pdf" download>Download PDF</a>
+  </div>
+
+  <main class="resume">
+    <header class="resume__header" data-section="header">
+      {{> header meta=meta}}
+    </header>
+
+    <div class="resume__main">
+      <section class="block" data-section="summary">
+        {{> summary summary=summary}}
+      </section>
+      <section class="block" data-section="experience">
+        {{> experience experience=experience}}
+      </section>
+    </div>
+
+    <aside class="resume__sidebar">
+      <div class="resume__sidebar-inner">
+        <section class="block" data-section="competencies">
+          {{> competencies competencies=competencies}}
+        </section>
+        <section class="block" data-section="education">
+          {{> education education=education}}
+        </section>
+        <section class="block" data-section="certifications">
+          {{> certifications certifications=certifications}}
+        </section>
+        <section class="block" data-section="languages">
+          {{> languages languages=languages}}
+        </section>
+      </div>
+    </aside>
+  </main>
+
+  <script id="variants" type="application/json">{{{variantsJson}}}</script>
+  <script src="switcher.js" defer></script>
+</body>
+</html>

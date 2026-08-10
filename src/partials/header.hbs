@@ -1,0 +1,10 @@
+<h1 class="name">{{meta.name}}</h1>
+{{#if meta.headline}}<p class="headline">{{meta.headline}}</p>{{/if}}
+<p class="contact">
+  {{#if meta.location}}<span class="contact__item">{{meta.location}}</span>{{/if}}
+  {{#if meta.phone}}<span class="contact__item"><a href="tel:{{meta.phone}}">{{meta.phone}}</a></span>{{/if}}
+  {{#if meta.email}}<span class="contact__item"><a href="mailto:{{meta.email}}">{{meta.email}}</a></span>{{/if}}
+  {{#if meta.links.linkedin}}<span class="contact__item"><a href="{{meta.links.linkedin}}" rel="noopener">LinkedIn</a></span>{{/if}}
+  {{#if meta.links.github}}<span class="contact__item"><a href="{{meta.links.github}}" rel="noopener">GitHub</a></span>{{/if}}
+  {{#if meta.links.website}}<span class="contact__item"><a href="{{meta.links.website}}" rel="noopener">Website</a></span>{{/if}}
+</p>
