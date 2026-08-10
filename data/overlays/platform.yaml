@@ -32,12 +32,16 @@ competencies:
       - Docker
   - group: Infrastructure as Code & Automation
     items:
-      - Terraform (modules, workspaces)
+      - Terraform
       - Ansible
       - Packer
       - Jenkins
       - GitHub Actions
-      - CI/CD
+      - Kubernetes
+      - Helm
+      - Docker
+      - ArgoCD
+      - GitOps
   - group: Identity, Security & Governance
     items:
       - IAM policies

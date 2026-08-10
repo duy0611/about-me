@@ -34,11 +34,13 @@ competencies:
       - Terraform
       - Ansible
       - Packer
+      - Jenkins
+      - GitHub Actions
       - Kubernetes
       - Helm
       - Docker
-      - Jenkins
-      - GitHub Actions
+      - ArgoCD
+      - GitOps
   - group: Programming & Scripting
     items:
       - Python

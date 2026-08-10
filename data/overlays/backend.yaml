@@ -33,7 +33,7 @@ competencies:
       - Docker
       - Kubernetes
       - Helm
-      - CI/CD (Jenkins, GitHub Actions, GitLab)
+      - CI/CD (Jenkins, GitHub Actions)
       - Airflow
   - group: Cloud & Infrastructure
     items:

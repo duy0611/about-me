@@ -36,11 +36,12 @@ competencies:
       - Ansible
       - Packer
       - Jenkins
-      - Bamboo
       - GitHub Actions
       - Kubernetes
       - Helm
       - Docker
+      - ArgoCD
+      - GitOps
   - group: Identity, Security & Governance
     items:
       - IAM policies
@@ -87,14 +88,15 @@ experience:
       - label: Golden Paths & Self-Service Automation
         text: >-
           Automate high-risk operations and build deterministic, reusable IaC
-          templates using Terraform, Ansible, Packer, and Github Actions to reduce manual
+          templates using Terraform, Kubernetes-native abstractions (Config Connector,
+          ACK), Packer, and Github Actions to reduce manual
           overhead and empower development teams to provision their own
           infrastructure safely.
       - label: Governance & Security
         text: >-
-          Implement strict cloud governance and security guardrails across hundreds
-          of accounts using IAM policies, roles, and scoped permissions, minimizing
-          risk while maintaining developer velocity.
+          Enforce least-privilege access at scale: AWS multi-account with a central
+          Identity account, GCP multi-project with Google JIT groups, and Kubernetes
+          guardrails via Kyverno, RBAC, and Network Policies.
       - label: Technical Leadership
         text: >-
           Act as a force multiplier by mentoring engineers, leading architectural
