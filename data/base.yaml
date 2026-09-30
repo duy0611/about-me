@@ -10,11 +10,11 @@ meta:
     website: "https://duy0611.github.io/about-me"
 
 summary: |
-  Platform Engineer with over 15 years in software engineering, the last six in
-  cloud infrastructure, reliability, and DevOps. I manage and provision 17+ Kubernetes
-  clusters, 100+ GCP projects, and 5+ AWS accounts used by more than 100 engineers,
-  with Terraform and Kubernetes-native controllers (Config Connector, ACK).
-  I help design and build our internal developer platform. I turn manual, high-risk
+  Platform Engineer with over 15 years in software engineering, the last eight in
+  cloud infrastructure, reliability, and DevOps. I build and run multi-cloud
+  platforms on GCP and AWS for product teams, provisioned with Terraform and
+  Kubernetes-native controllers (Config Connector, ACK). I help design and build
+  internal developer platforms. I turn manual, high-risk
   operations into reusable templates, and access now goes through pull request
   review instead of being granted by hand. I've also built and run production
   infrastructure for ML and NLP workloads. I mentor engineers, run architectural
@@ -81,9 +81,9 @@ experience:
     bullets:
       - label: Cloud Architecture & Multi-Cloud
         text: >-
-          Manage and scale Supermetrics' infrastructure on AWS and GCP (17+ Kubernetes
-          clusters, 100+ GCP projects, 5+ AWS accounts) and keep it highly available
-          across both clouds.
+          Manage and scale Supermetrics' infrastructure on AWS and GCP, including
+          the GCP projects, AWS accounts, and Kubernetes clusters, and keep it
+          highly available across both clouds.
       - label: Golden Paths & Self-Service Automation
         text: >-
           Automate high-risk operations and build deterministic, reusable IaC
