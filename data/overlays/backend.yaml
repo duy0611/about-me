@@ -6,12 +6,12 @@ meta:
 
 summary: |
   Backend engineer with 10+ years shipping production services in Java, Spring
-  Boot, and Python — from ERP integrations at Wapice, through microservices
-  platforms at Witrafi, to product ownership as CTO/Co-founder at LIFESUP. Also
-  6+ years running the infrastructure those services live on (AWS, GCP,
-  Kubernetes, Terraform), so I write code that ops-well: predictable, observable,
-  and cheap to change. Comfortable across the whole delivery stack, from API
-  design and data modeling through CI/CD and cloud runtime.
+  Boot, and Python. I built ERP integrations at Wapice and microservices platforms
+  at Witrafi, and owned the product as CTO and co-founder at LIFESUP. I've also
+  spent 6+ years running the infrastructure those services run on (AWS, GCP,
+  Kubernetes, Terraform), which shapes how I write code: easy to operate, easy to
+  observe, and cheap to change. I work on everything from API design and data
+  modeling to CI/CD and the cloud runtime.
 
 competencies:
   - group: Languages

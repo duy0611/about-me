@@ -5,14 +5,14 @@ meta:
   headline: Staff Platform Engineer
 
 summary: |
-  Platform Engineer focused on building Internal Developer Platforms that
-  let product teams ship safely without waiting on ops. 6+ years designing golden
-  paths on AWS and GCP — reusable Terraform modules and Kubernetes-native
-  abstractions (Config Connector, ACK) that turn one-off tickets into self-service
-  workflows. A force multiplier who thrives at the intersection of DX, security,
-  and cost: writing paved-road tooling, mentoring engineers, and setting technical
-  standards that make the safe path also the easy path. Hands-on exposure to AI/ML
-  systems to help teams adopt AI-assisted development safely.
+  Platform Engineer who builds Internal Developer Platforms so product teams can
+  ship safely without waiting on ops. For 6+ years I've designed golden paths on
+  AWS and GCP: reusable Terraform modules and Kubernetes-native abstractions
+  (Config Connector, ACK) that replace one-off tickets with self-service
+  workflows. Most of my work sits where developer experience, security, and cost
+  meet. I write paved-road tooling, mentor engineers, and set technical standards
+  so the safe path is also the easy one. I've worked hands-on with AI/ML systems
+  and help teams adopt AI-assisted development safely.
 
 competencies:
   - group: Platform & Developer Experience

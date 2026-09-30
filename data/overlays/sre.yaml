@@ -5,14 +5,13 @@ meta:
   headline: Lead Site Reliability Engineer
 
 summary: |
-  Site Reliability Engineer with 6+ years running production infrastructure
-  at scale across AWS and GCP. Deep experience turning noisy, high-risk operations
-  into SLO-backed, self-healing systems — from designing incident response
-  procedures and on-call rotations to codifying reliability guardrails as
-  Terraform and Kubernetes controllers (Config Connector, ACK). Comfortable owning the full
-  reliability stack: telemetry, alerting, error budgets, capacity planning, and
-  post-incident learning. Track record of mentoring engineers into a reliability
-  mindset and driving org-wide standards for observability and change safety.
+  Site Reliability Engineer with 6+ years running production infrastructure on
+  AWS and GCP. I turn noisy, high-risk operations into SLO-backed, self-healing
+  systems. That work covers incident response procedures and on-call rotations as
+  well as reliability guardrails written as Terraform and Kubernetes controllers
+  (Config Connector, ACK). I own telemetry, alerting, error budgets, capacity
+  planning, and post-incident reviews. I mentor engineers on reliability practice
+  and drive company-wide standards for observability and change safety.
 
 competencies:
   - group: Reliability & Operations

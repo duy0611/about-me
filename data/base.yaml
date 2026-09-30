@@ -10,15 +10,15 @@ meta:
     website: "https://duy0611.github.io/about-me"
 
 summary: |
-  Platform Engineer with over 15 years in software engineering and the last six in
+  Platform Engineer with over 15 years in software engineering, the last six in
   cloud infrastructure, reliability, and DevOps. I manage and provision 17+ Kubernetes
-  clusters, 100+ GCP projects, and 5+ AWS accounts serving more than 100 engineers,
-  using Terraform and Kubernetes-native controllers (Config Connector, ACK).
-  I help architect and build our internal developer platform, and turn manual,
-  high-risk operations into reusable templates and access that gets reviewed in a
-  pull request rather than granted by hand. I've also built and
-  run production infrastructure for ML and NLP workloads. I mentor engineers, run
-  architectural reviews, and set technical standards.
+  clusters, 100+ GCP projects, and 5+ AWS accounts used by more than 100 engineers,
+  with Terraform and Kubernetes-native controllers (Config Connector, ACK).
+  I help design and build our internal developer platform. I turn manual, high-risk
+  operations into reusable templates, and access now goes through pull request
+  review instead of being granted by hand. I've also built and run production
+  infrastructure for ML and NLP workloads. I mentor engineers, run architectural
+  reviews, and set technical standards.
 
 competencies:
   - group: Cloud & Infrastructure
@@ -26,7 +26,6 @@ competencies:
       - AWS
       - Google Cloud Platform (GCP)
       - Multi-Cloud Architecture
-      - DigitalOcean
   - group: Infrastructure as Code & Automation
     items:
       - Terraform
@@ -82,30 +81,29 @@ experience:
     bullets:
       - label: Cloud Architecture & Multi-Cloud
         text: >-
-          Manage, provision, and scale Supermetrics' large-scale infrastructure across
-          AWS and GCP environments, ensuring high availability and seamless
-          cross-cloud orchestration.
+          Manage and scale Supermetrics' infrastructure on AWS and GCP (17+ Kubernetes
+          clusters, 100+ GCP projects, 5+ AWS accounts) and keep it highly available
+          across both clouds.
       - label: Golden Paths & Self-Service Automation
         text: >-
           Automate high-risk operations and build deterministic, reusable IaC
-          templates using Terraform, Kubernetes-native abstractions (Config Connector,
-          ACK), Packer, and Github Actions to reduce manual
-          overhead and empower development teams to provision their own
-          infrastructure safely.
+          templates with Terraform, Kubernetes-native abstractions (Config Connector,
+          ACK), Packer, and GitHub Actions, so development teams can provision their
+          own infrastructure safely with less manual work.
       - label: Governance & Security
         text: >-
-          Enforce least-privilege access at scale: AWS multi-account with a central
-          Identity account, GCP multi-project with Google JIT groups, and Kubernetes
-          guardrails via Kyverno, RBAC, and Network Policies.
+          Enforce least-privilege access on AWS (multi-account, with a central
+          Identity account), GCP (multi-project, with Google JIT groups), and
+          Kubernetes (Kyverno, RBAC, and Network Policies).
       - label: Technical Leadership
         text: >-
-          Act as a force multiplier by mentoring engineers, leading architectural
-          reviews, and turning complex business requirements into concrete technical
-          roadmaps. Set technical standards across the organization.
+          Mentor engineers, lead architectural reviews, and turn business
+          requirements into technical roadmaps. Set technical standards across the
+          organization.
       - label: Cost Optimization (FinOps)
         text: >-
-          Continuously evaluate and optimize cloud resource consumption across AWS
-          and GCP to ensure cost-efficiency across multiple teams and projects.
+          Track and reduce cloud spend on AWS and GCP for multiple teams and
+          projects.
 
   - company: Valuemotive
     location: Helsinki, Finland
@@ -116,16 +114,16 @@ experience:
     bullets:
       - label: AI Infrastructure & Kubernetes
         text: >-
-          Architected and deployed production-grade infrastructure for an internal
-          NLP (Natural Language Processing) project on AWS.
+          Designed and deployed production infrastructure on AWS for an internal
+          natural language processing (NLP) project.
       - label: ML Pipelines on Kubernetes
         text: >-
           Built secure deployment environments for machine learning data pipelines
-          using Kubernetes, Helm, Docker, and Airflow.
+          with Kubernetes, Helm, Docker, and Airflow.
       - label: IaC & Automation
         text: >-
-          Provisioned robust cloud infrastructure using Terraform, ensuring
-          consistent and reproducible environments across the lifecycle.
+          Provisioned cloud infrastructure with Terraform so environments stayed
+          consistent and reproducible from development to production.
 
   - company: Witrafi
     location: Helsinki, Finland
@@ -136,13 +134,13 @@ experience:
     bullets:
       - label: Core Platform Architecture
         text: >-
-          Directed the high-level technology choices for core startup products
-          (Magee, Spottery, Rent-a-park).
+          Made the main technology choices for the startup's core products (Magee,
+          Spottery, Rent-a-park).
       - label: Microservices & CI/CD
         text: >-
-          Designed a scalable microservices architecture using Java Spring Boot,
-          Docker, Kubernetes, and AWS/DigitalOcean. Orchestrated CI/CD pipelines via
-          Github Actions to accelerate time-to-market.
+          Designed a scalable microservices architecture on Java Spring Boot, Docker,
+          Kubernetes, and AWS/DigitalOcean. Set up CI/CD pipelines in GitHub Actions
+          to ship features faster.
 
   - company: LIFESUP
     location: Vietnam
@@ -153,31 +151,31 @@ experience:
     bullets:
       - label: Product Leadership
         text: >-
-          Managed and developed the core product (TagOn for Fashion). Defined the
-          technical vision and led a team to build robust software using Java,
-          Spring Cloud, Docker, Rancher, and AWS.
+          Owned and built the core product, TagOn for Fashion. Set its technical
+          direction and led the team that built it with Java, Spring Cloud, Docker,
+          Rancher, and AWS.
       - label: Business Alignment
         text: >-
-          Coordinated the core team to act as subcontractors for major partners,
-          translating vague business pain points into technical roadmaps and
-          independently driving complex projects to completion.
+          Ran the core team as a subcontractor for major partners. Turned loosely
+          defined business problems into technical roadmaps and delivered complex
+          projects independently.
 
   - company: Wapice Ltd
     location: Vaasa, Finland
     roles:
-      - title: Senior Software Developer — Java / Full-stack
+      - title: Senior Software Developer (Java / Full-stack)
         start: Jun 2009
         end: Apr 2019
     bullets:
       - label: Versatile Engineering
         text: >-
-          Served as Lead Developer and Lead Architect across multiple subcontractor
-          projects, utilizing a vast tech stack (Java, C#, AWS, Docker, Kubernetes,
-          Jenkins).
+          Lead Developer and Lead Architect on multiple subcontractor projects,
+          working with Java, C#, AWS, Docker, Kubernetes, and Jenkins.
       - label: Customer & Vendor Management
         text: >-
-          Worked closely with clients to build and maintain ERP systems,
-          troubleshooting complex issues and building lasting technical partnerships.
+          Worked directly with clients to build and maintain ERP systems and
+          troubleshoot complex issues, and kept long-term working relationships
+          with them.
 
   - company: University of Vaasa
     location: Vaasa, Finland
@@ -188,12 +186,12 @@ experience:
     bullets:
       - label: Smart Systems & Computing
         text: >-
-          Developed smart systems involving Big Data, Cloud Computing, and Parallel
-          Computing (NVIDIA CUDA) for the S-STEP program.
+          Built big data, cloud, and parallel computing (NVIDIA CUDA) systems for the
+          S-STEP program.
       - label: Logistics Platform
         text: >-
-          Built the portal for a Logistics Tracking System using Salesforce Cloud,
-          C#, and Java in cooperation with Wärtsilä Ship Power.
+          Built the portal for a logistics tracking system with Salesforce Cloud, C#,
+          and Java, together with Wärtsilä Ship Power.
 
 education:
   - degree: Doctoral Studies in Technical Sciences, Computer Science (not completed)
