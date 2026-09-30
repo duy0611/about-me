@@ -1,0 +1,206 @@
+# Overlay: Nordea, Tech Lead GCP Infrastructure, Data Mesh and AI Platforms
+# Emphasizes GCP foundations, IAM, Terraform, Vertex AI, and team leadership.
+
+meta:
+  headline: Staff Platform Engineer (GCP)
+
+summary: |
+  Platform engineer with over 15 years in software engineering, the last six in
+  cloud infrastructure and reliability on GCP and AWS. I build and run GCP
+  foundations for product teams, from the organization and landing zone to
+  networking and access, provisioned with Terraform and changed through code
+  review. I have led a platform engineering team and now set technical direction
+  while staying hands-on with Terraform and CI/CD. I also run our internal LLM gateway on Vertex AI, and earlier built
+  production infrastructure for ML and NLP workloads.
+
+competencies:
+  - group: GCP Foundations
+    items:
+      - Organization, folders & projects
+      - Landing zones
+      - Shared VPC & Cloud NAT
+      - GKE
+      - Cloud Run
+      - Pub/Sub
+      - Cloud Logging & Monitoring
+  - group: Identity & Security
+    items:
+      - GCP IAM & JIT access groups
+      - Workload Identity & Workload Identity Federation
+      - Secret Manager & External Secrets
+      - Cloud KMS (CMEK)
+      - AWS Organizations & IAM Identity Center
+      - Kyverno, RBAC & Network Policies
+  - group: Infrastructure as Code & CI/CD
+    items:
+      - Terraform (versioned modules)
+      - Digger (open-source project)
+      - Config Connector
+      - GitHub Actions
+      - ArgoCD / GitOps
+      - Helm
+      - Packer
+  - group: Data & AI
+    items:
+      - Vertex AI
+      - LiteLLM gateway
+      - BigQuery
+      - Airflow
+      - Dataflow & Cloud Composer (basic)
+  - group: Reliability & Cost
+    items:
+      - SLOs & alerting
+      - Datadog
+      - Prometheus & Grafana
+      - Incident response & post-mortems
+      - FinOps, budgets & cost alerts
+  - group: Programming
+    items:
+      - Python
+      - Golang
+      - Shell / Bash
+      - Java
+
+experience:
+  - company: Supermetrics
+    location: Helsinki, Finland
+    roles:
+      - title: Staff Platform Engineer
+        start: July 2026
+        end: Present
+      - title: Team Lead / Cloud Infrastructure
+        start: Jan 2025
+        end: June 2026
+      - title: Lead Site Reliability Engineer
+        start: Apr 2023
+        end: Jan 2025
+      - title: Site Reliability Engineer
+        start: Aug 2020
+        end: Mar 2023
+    bullets:
+      - label: GCP Foundations
+        text: >-
+          Run the GCP organization: the folder and project hierarchy, the
+          landing zone, and Shared VPC networking with Cloud NAT. Also run the
+          AWS accounts and the GKE and EKS clusters, with production services on
+          Cloud Run and Pub/Sub.
+      - label: Terraform & Self-Service Provisioning
+        text: >-
+          Build versioned Terraform modules and Kubernetes-native abstractions
+          (Config Connector). Terraform plans run on each pull request and
+          apply on merge, so product teams provision their own GCP projects and
+          infrastructure through code review with less manual work.
+      - label: Identity & Access
+        text: >-
+          Enforce least-privilege access on GCP with Google JIT access groups,
+          Workload Identity and Workload Identity Federation for keyless service
+          access, Secret Manager with External Secrets, and Cloud KMS keys (CMEK).
+          Access is granted through pull request review instead of by hand. On
+          AWS, a multi-account setup with a central Identity account; on
+          Kubernetes, RBAC, Network Policies, and Kyverno.
+      - label: AI Platform
+        text: >-
+          Run the company's internal LLM gateway (LiteLLM) with Vertex AI as the
+          inference backend. Help engineering teams adopt AI-assisted development safely.
+      - label: Observability & Incident Response
+        text: >-
+          Define SLOs and alerts in Datadog, Prometheus/Grafana, and Cloud
+          Monitoring, with logs in Cloud Logging. Take part in the on-call
+          rotation, handle incidents, and run post-mortems.
+      - label: Cost Control
+        text: >-
+          Track GCP and AWS spend for multiple teams and projects from billing
+          exports in BigQuery, with budgets and cost alerts.
+      - label: Technical Leadership
+        text: >-
+          Led the Cloud Infrastructure team (6+ engineers) and owned its roadmap,
+          turning business requirements into technical plans. Mentor engineers,
+          lead design and code reviews, and set technical standards across the
+          organization.
+
+  - company: Valuemotive
+    location: Helsinki, Finland
+    roles:
+      - title: Software Architect
+        start: Apr 2019
+        end: Jul 2020
+    bullets:
+      - label: AI Infrastructure & Kubernetes
+        text: >-
+          Designed and deployed production infrastructure on AWS for an internal
+          natural language processing (NLP) project.
+      - label: ML Pipelines on Kubernetes
+        text: >-
+          Built secure deployment environments for machine learning data pipelines
+          with Kubernetes, Helm, Docker, and Airflow.
+      - label: IaC & Automation
+        text: >-
+          Provisioned cloud infrastructure with Terraform so environments stayed
+          consistent and reproducible from development to production.
+
+  - company: Witrafi
+    location: Helsinki, Finland
+    roles:
+      - title: Lead Technical Architect
+        start: Feb 2018
+        end: Mar 2019
+    bullets:
+      - label: Core Platform Architecture
+        text: >-
+          Made the main technology choices for the startup's core products (Magee,
+          Spottery, Rent-a-park).
+      - label: Microservices & CI/CD
+        text: >-
+          Designed a microservices architecture on Java Spring Boot, Docker,
+          Kubernetes, and AWS/DigitalOcean, and set up CI/CD pipelines in GitHub
+          Actions.
+
+  - company: LIFESUP
+    location: Vietnam
+    roles:
+      - title: CTO and Co-founder
+        start: Nov 2016
+        end: Oct 2018
+    bullets:
+      - label: Product Leadership
+        text: >-
+          Owned and built the core product, TagOn for Fashion. Set its technical
+          direction and led the team that built it with Java, Spring Cloud, Docker,
+          Rancher, and AWS.
+      - label: Business Alignment
+        text: >-
+          Ran the core team as a subcontractor for major partners. Turned loosely
+          defined business problems into technical roadmaps and delivered complex
+          projects independently.
+
+  - company: Wapice Ltd
+    location: Vaasa, Finland
+    roles:
+      - title: Senior Software Developer (Java / Full-stack)
+        start: Jun 2009
+        end: Apr 2019
+    bullets:
+      - label: Versatile Engineering
+        text: >-
+          Lead Developer and Lead Architect on multiple subcontractor projects,
+          working with Java, C#, AWS, Docker, Kubernetes, and Jenkins.
+      - label: Customer & Vendor Management
+        text: >-
+          Worked directly with clients to build and maintain ERP systems and
+          troubleshoot complex issues.
+
+  - company: University of Vaasa
+    location: Vaasa, Finland
+    roles:
+      - title: Researcher / Project Worker
+        start: Sep 2010
+        end: Dec 2016
+    bullets:
+      - label: Smart Systems & Computing
+        text: >-
+          Built big data, cloud, and parallel computing (NVIDIA CUDA) systems for the
+          S-STEP program.
+      - label: Logistics Platform
+        text: >-
+          Built the portal for a logistics tracking system with Salesforce Cloud, C#,
+          and Java, together with Wärtsilä Ship Power.

@@ -27,6 +27,8 @@ const VARIANTS = [
   { name: 'sre', file: 'resume-sre.pdf', query: '?variant=sre' },
   { name: 'platform', file: 'resume-platform.pdf', query: '?variant=platform' },
   { name: 'backend', file: 'resume-backend.pdf', query: '?variant=backend' },
+  { name: 'nordea-tech-lead-gcp', file: 'resume-nordea-tech-lead-gcp.pdf', query: '?variant=nordea-tech-lead-gcp' },
+  { name: 'nordea-tech-lead-ai', file: 'resume-nordea-tech-lead-ai.pdf', query: '?variant=nordea-tech-lead-ai' },
 ];
 
 async function main() {
