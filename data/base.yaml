@@ -11,33 +11,39 @@ meta:
 
 summary: |
   Platform Engineer with over 15 years in software engineering, the last eight in
-  cloud infrastructure, reliability, and DevOps. I build and run multi-cloud
-  platforms on GCP and AWS for product teams, provisioned with Terraform and
-  Kubernetes-native controllers (Config Connector, ACK). I help design and build
-  internal developer platforms. I turn manual, high-risk
-  operations into reusable templates, and access now goes through pull request
-  review instead of being granted by hand. I've also built and run production
-  infrastructure for ML and NLP workloads. I mentor engineers, run architectural
-  reviews, and set technical standards.
+  cloud infrastructure, reliability, and DevOps. I have led a platform
+  engineering team and now set technical direction while staying hands-on. I
+  design and run internal developer platforms on GCP and AWS, provisioned with
+  Terraform and Kubernetes-native controllers (Config Connector, ACK). I turn
+  manual, high-risk operations into reusable templates, and access goes through
+  pull request review. I also run an internal LLM gateway on Vertex AI and have
+  built production infrastructure for ML and NLP workloads.
 
 competencies:
-  - group: Cloud & Infrastructure
+  - group: Cloud & Containers
     items:
-      - AWS
       - Google Cloud Platform (GCP)
-      - Multi-Cloud Architecture
-  - group: Infrastructure as Code & Automation
-    items:
-      - Terraform
-      - Ansible
-      - Packer
-      - Jenkins
-      - GitHub Actions
-      - Kubernetes
+      - AWS
+      - Kubernetes (GKE, EKS)
       - Helm
       - Docker
-      - ArgoCD
-      - GitOps
+  - group: Infrastructure as Code & CI/CD
+    items:
+      - Terraform
+      - Digger (contributor)
+      - Config Connector / ACK
+      - GitHub Actions
+      - ArgoCD / GitOps
+      - Packer
+      - Ansible
+      - Jenkins
+  - group: Observability & Reliability
+    items:
+      - SLOs & alerting
+      - Datadog
+      - Prometheus & Grafana
+      - Cloud Logging & Monitoring
+      - Incident response & post-mortems
   - group: Identity, Security & Governance
     items:
       - AWS Organizations & multi-account
@@ -58,9 +64,9 @@ competencies:
   - group: Domain Expertise
     items:
       - Internal Developer Platforms
-      - AI-assisted workflows
+      - LLM gateways (LiteLLM, Vertex AI)
+      - AI-assisted workflows (Claude Code, MCP)
       - FinOps & Cost Optimization
-      - Large-scale Distributed Systems
 
 experience:
   - company: Supermetrics
@@ -89,16 +95,30 @@ experience:
           Automate high-risk operations and build deterministic, reusable IaC
           templates with Terraform, Kubernetes-native abstractions (Config Connector,
           ACK), Packer, and GitHub Actions, so development teams can provision their
-          own infrastructure safely with less manual work.
+          own infrastructure safely with less manual work. Digger runs Terraform
+          plans on each pull request, and I contribute to the Digger open-source
+          project.
       - label: Governance & Security
         text: >-
           Enforce least-privilege access on AWS (multi-account, with a central
           Identity account), GCP (multi-project, with Google JIT groups), and
           Kubernetes (Kyverno, RBAC, and Network Policies).
+      - label: AI Platform
+        text: >-
+          Run the company's internal LLM gateway on LiteLLM with Vertex AI as the
+          inference backend, with per-team keys, spend limits, and usage logging.
+          Write Claude Code skills, plugins, and MCP servers that let engineers
+          handle platform tasks through an agent.
+      - label: Observability & Incident Response
+        text: >-
+          Define SLOs and alerts in Datadog, Prometheus/Grafana, and Cloud
+          Monitoring. Take part in the on-call rotation, handle incidents, and
+          run post-mortems.
       - label: Technical Leadership
         text: >-
-          Mentor engineers, lead architectural reviews, and turn business
-          requirements into technical roadmaps. Set technical standards across the
+          Led the Cloud Infrastructure team (6+ engineers) and owned its roadmap,
+          turning business requirements into technical plans. Mentor engineers,
+          lead architectural reviews, and set technical standards across the
           organization.
       - label: Cost Optimization (FinOps)
         text: >-
